@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/onUpcount"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="26dp"
+        android:onClick="Upcount"
+        android:text="Upcount" />
+
+    <Button
+        android:id="@+id/onDowncount"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_below="@+id/onUpcount"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="182dp"
+        android:onClick="Downcount"
+        android:text="Downcount" />
+
+    <Button
+        android:id="@+id/onNested"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_below="@+id/onDowncount"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="219dp"
+        android:onClick="Nested"
+        android:text="Nested" />
+</RelativeLayout>
